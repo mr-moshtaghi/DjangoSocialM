@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <!--    <link href="main.css?v=1.0" rel="stylesheet" type="text/css"/>-->
+    <link rel="canonical" href=""/>
+    <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href=""
+    />
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="36x36"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="48x48"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="72x72"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href=""
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href=""
+    />
+    <meta
+            property="og:title"
+            content=""
+    />
+    <meta
+            name="twitter:title"
+            content=""
+    />
+    <meta
+            name="keywords"
+            content=""
+    />
+    <meta
+            name="description"
+            content=""
+    />
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <Style>
+        @font-face {
+            font-family: "iransans";
+            src: url("assets/iransans/eot/medium.eot");
+            src: local("iransans"), local("iransans"),
+            url("assets/iransans/eot/medium.eot") format("embedded-opentype"),
+            url("assets/iransans/woff/medium.woff") format("woff"),
+            url("assets/iransans/ttf/medium.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "iransansbold";
+            src: url("assets/iransans/eot/bold.eot");
+            src: local("iransansbold"), local("iransansbold"),
+            url("assets/iransans/eot/bold.eot") format("embedded-opentype"),
+            url("assets/iransans/woff/bold.woff") format("woff"),
+            url("assets/iransans/ttf/bold.ttf") format("truetype");
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: "iransanslight";
+            src: url("assets/iransans/eot/light.eot");
+            src: local("iransanslight"), local("iransanslight"),
+            url("assets/iransans/eot/light.eot") format("embedded-opentype"),
+            url("assets/iransans/woff/light.woff") format("woff"),
+            url("assets/iransans/ttf/light.ttf") format("truetype");
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: "iransansnumber";
+            src: url("assets/iransans-numeral/eot/medium.eot");
+            src: local("iransansnumber"), local("iransansnumber"),
+            url("assets/iransans-numeral/eot/medium.eot") format("embedded-opentype"),
+            url("assets/iransans-numeral/woff/medium.woff") format("woff"),
+            url("assets/iransans-numeral/ttf/medium.ttf") format("truetype");
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        *,
+        *:before,
+        *:after {
+            font-family: "iransans";
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            font-family: inherit;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a,
+        a:active,
+        a:focus {
+            outline: none; /* Works in Firefox, Chrome, IE8 and above */
+        }
+
+        body button:active {
+            border: none;
+        }
+
+        body {
+            max-width: 1440px;
+            min-height: 100%;
+            margin: 0 auto;
+            position: relative;
+            font-family: "iransans";
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            overflow-x: hidden;
+            background: rgb(113, 130, 90);
+            background: linear-gradient(0deg, rgba(113, 130, 90, 1) 0%, rgba(180, 165, 134, 1) 100%);
+            background-attachment: fixed;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .section {
+            width: 80%;
+            background-color: #ffffff;
+            border-radius: 3px;
+            padding: 40px 50px;
+            margin: 50px auto;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            color: #ffffff;
+            padding: 10px;
+            background: rgb(113, 130, 90);
+            background: linear-gradient(0deg, rgba(113, 130, 90, 1) 0%, rgba(180, 165, 134, 1) 100%);
+        }
+
+        .btn:hover, .btn:active {
+            background: rgb(113, 130, 90);
+            background: linear-gradient(0deg, rgba(180, 165, 134, 1) 0%, rgba(113, 130, 90, 1) 100%);
+        }
+
+        header {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-radius: 3px;
+            margin: 0 auto 50px;
+        }
+
+        .header_innerContainer {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header_innerContainer__textBox {
+            width: 100%;
+            flex: 1 1 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .header_title__1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #71825a;
+        }
+
+        .header_title__1:hover {
+            color: #426316;
+        }
+
+        .header_title__2 {
+            font-size: 20px;
+            font-family: "iransans";
+            font-weight: 400;
+            color: #2d2d2d;
+        }
+
+        .header_log {
+            width: 100px;
+            height: 100px;
+        }
+
+        .main_box {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #42631647;
+            border-radius: 3px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        .form_section .form_item {
+            position: relative;
+            width: 100%;
+        }
+
+        .form_section .form_item .error {
+            position: absolute;
+            top: 76px;
+            direction: ltr;
+            font-size: 11px;
+            color: red;
+        }
+
+        .form_section .form_item input::placeholder {
+            color: #aaaaaa;
+        }
+
+        .form_section .form_item input {
+            direction: rtl;
+            font-weight: 400;
+            font-family: "iransans";
+            background-color: #ffffff;
+            border-radius: 3px;
+            border: 2px solid #ddd;
+            -webkit-appearance: none;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 0 5px;
+        }
+
+        .form_section .form_item label {
+            font-size: 14px;
+            color: #2d2d2d;
+        }
+
+        .main_box__title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #76523c;
+            margin-bottom: 20px;
+        }
+
+        /*****************MEDIA QUERY******************/
+
+        @media screen and (max-width: 576px ) {
+            .section {
+                width: 95%;
+                padding: 10px;
+                margin-top: -25px;
+            }
+
+            .main_box {
+                width: 100%;
+            }
+
+            .header_title__1, .header_title__2 {
+                font-size: 16px;
+            }
+
+            .header_log {
+                width: 50px;
+                height: 50px;
+            }
+
+            .arrow {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    </Style>
+    <title>گرفتن مرخصی جدید</title>
+</head>
+<body>
+<header class="header">
+    <div class="header_innerContainer">
+        <div class="header_innerContainer__textBox">
+            <h5 class="header_title__1"><a href="#">صفحه اصلی</a></h5>
+            <div>
+                <div class="arrow left"></div>
+            </div>
+            <h5 class="header_title__2">لیست تمام سربازها</h5>
+        </div>
+        <img src="assets/images/IRI.Army_Ground_Force_Seal.svg.png" alt="نماد نیروی زمینی ارتش" class="header_log"/>
+    </div>
+</header>
+<main class="main">
+    <div class="section">
+        <section class="main_box">
+            <h2 class="main_box__title">ثبت درخواست مرخصی</h2>
+    <form action="" method="post" novalidate>
+        {% for field in form %}
+            <div class="form-group">
+                {{ field.label }}
+                {{ field }}
+                {{ field.errors }}
+            </div>
+        {% endfor %}
+        {% csrf_token %}
+        <input class="btn btn-primary" type="submit" value="Send">
+
+    </form>
+        </section>
+    </div>
+</main>
+</body>
+</html>
